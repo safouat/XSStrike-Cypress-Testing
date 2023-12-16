@@ -1,3 +1,8 @@
+This repository contains Cypress tests for two labs: one for login functionality and another for cross-site scripting (XSS) testing.
+## Lab 1: Login Test
+/e2e/loginTest.cy.js
+## Lab 2: XSSTRIKE AND CYPRESS
+/e2e/xss.cy.js
 # XSStrike-Cypress-Testing
 find XSS payloads with XSStrike and then testing them using Cypress.
 1. Install XSStrike:
