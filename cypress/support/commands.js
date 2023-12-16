@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (username, password) => {
+  cy.visit('http://localhost:8094/DiagnosticAI/Login1');
+  cy.get('#exampleInputEmaill').type(username);
+  cy.get('#exampleInputPassword1').type(password);
+  cy.get('.btn').click();
+});
+
+Cypress.Commands.add('logout', () => {
+  cy.visit('/logout');
+});
